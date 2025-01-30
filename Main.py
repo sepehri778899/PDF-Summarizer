@@ -75,4 +75,4 @@ def upload_pdf():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='192.168.100.9', debug=True, port=5000)
